@@ -1,0 +1,40 @@
+.entertainment img{
+    max-width: 640px;
+}
+.entertainment p{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: medium;
+   
+}
+
+.entertainment{
+    background-color: yellow;
+    box-sizing: content-box;
+    padding-left: 1cm;
+    padding-bottom: 5px;
+    bottom: auto;
+}
+.entertainment h3{
+    font-style: italic;
+    color: brown;
+}
+
+.technology img{
+    max-width: 640px;
+}
+
+.technology p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+.technology h3{
+    font-style: oblique;
+    color: indigo;
+}
+.technology{
+    background-color:aquamarine;
+    box-sizing: content-box;
+    padding-left: 1cm;
+    padding-bottom: 5px;
+    bottom: auto;
+}
