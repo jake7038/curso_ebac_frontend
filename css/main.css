@@ -1,40 +1,106 @@
-.entertainment img{
-    max-width: 640px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
 }
-.entertainment p{
-   font-family: 'Times New Roman', Times, serif;
-   font-size: medium;
-   
+body > header{
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: whitesmoke;
+
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
-.entertainment{
-    background-color: yellow;
-    box-sizing: content-box;
-    padding-left: 1cm;
-    padding-bottom: 5px;
-    bottom: auto;
-}
-.entertainment h3{
-    font-style: italic;
-    color: brown;
+header li{
+    display: inline;
+    
 }
 
-.technology img{
-    max-width: 640px;
+header li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    padding-right: auto;
 }
 
-.technology p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
+.container{
+    width: 1366px;
+    margin: 0 auto;
+
 }
-.technology h3{
-    font-style: oblique;
-    color: indigo;
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
-.technology{
+
+.articles article img{
+    
+    width: 80%;
+    
+
+}
+.articles article{
+    width: 30%;
+}
+section{
+    padding: 16px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+section h2, .articles article{
+    margin-bottom: 16px;
+}
+.articles article h3{
+    margin-top:8px;
+    margin-bottom: 8px;
+}
+
+.articles article a{
+    background-color: blue;
+    color:#fff ;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+}
+.articles article p,
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+.articles article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#entertainement{
+    background-color: blueviolet;
+}
+
+#sports{
+    background-color: rgb(89, 214, 156);
+}
+
+#economy{
+    background-color:yellowgreen;
+}
+#technology{
     background-color:aquamarine;
-    box-sizing: content-box;
-    padding-left: 1cm;
-    padding-bottom: 5px;
-    bottom: auto;
 }
+
+
