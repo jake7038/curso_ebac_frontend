@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;   
+}
+
+.sobre-a-loja > article > img{
+    width: 480px;
+    height: 480px;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-inicial > li{
+    display: inline;
+    justify-content: space-between;
+    padding-left: 16px;
+} 
+.menu-inicial > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    padding: 16px 0 16px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+    background-color: rgb(153, 50, 204);
+}
+
+header a{
+    font-weight: bold;
+}
+.sobre-a-loja > article{
+        display: flex;
+    }
+
+.sobre-a-loja > article > div{
+    padding: 8px;
+}
+
+.sobre-a-loja > article > div > h2{
+    color:cornflowerblue;
+    border-bottom: solid cornflowerblue ;
+    padding-bottom: 15px;
+}
+
+.submenu{
+    display: none;
+   border: 1px solid red;
+    position: absolute;
+    background-color: #ccc;
+    left: 0;
+    width: 300px;
+    top: 100%;
+
+}
+
+.section-destaque{
+    color:cornflowerblue;
+    border-bottom: solid cornflowerblue ;
+    padding-bottom: 15px;
+}
+
+h2{
+    margin-bottom: 24px;
+}
+
+
+.noticia img{
+    max-width: 100%;
+}
+.destaque{
+    margin-bottom: 56px;
+}
+.destaque .noticia a{
+    display: flex;
+    font-size:  2em;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px, 0;
+    border: none;
+    background-color: rgba(0, 128, 0, 0.79);
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 12%;
+}
+
+
+.destaque .noticia img{
+    margin-bottom: 32px;
+}
+aside{
+    padding-left: 40px;
+}
+
+aside .noticia{
+    margin-bottom: 24px;
+}
+
+.noticias{
+    display: grid;
+    grid-template-columns: repeat(4, 24.2%);
+    column-gap: 1%;
+    row-gap: 5%;
+   
+}
+
+
+@media screen and (max-width: 767px) {
+    .conteudo{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .menu-inicial > li{
+        display: block;
+        padding-bottom: 10px;
+        
+    }
+
+    .sobre-a-loja > article > img{
+        width: 320px;
+        height: 320px;
+    }
+
+    .menu-inicial > li {
+        text-align:center;
+    }
+    
+    .destaque .noticia a{
+        display: block;
+        font-size:  1em;
+    }
+    
+    .sobre-a-loja > article{
+        display: block;
+    }
+    
+    
+
+    .destaque .noticia img{
+        margin-right: 0px;
+    }
+
+    .noticias{
+        display: block;
+        
+       
+    }
+    .noticias .noticia{
+        margin-bottom: 32px;
+    }
+
+    aside{
+        padding-left: 0;
+    }
+
+    header div .container{
+       flex-direction: column;
+
+    }
+
+    
+
+    .submenu{
+        display: block;
+        border: none;
+        left: 0;
+        width: 100%;
+        top: 100%;
+        position: relative;
+        background: none;
+    }
+    .menu{
+        display: none;
+    }
+    
+    .menu > li{
+        clear: both;
+    
+    }
+
+
+    .submenu li{
+        display: block;
+        padding: 8px;
+    }
+    .botao-menu{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu button{
+        padding: 8px;
+        
+    }
+
+    footer{
+        background-color: rgb(153, 50, 204);
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+    .botao-menu{
+        display: none;
+    }
+    .destaque .noticia a{
+        font-size: 1.5em;
+    }
+
+    .sobre-a-loja > article{
+        display: block;
+        
+    }
+    .noticias{
+        grid-template-columns: repeat(2,49%);
+    }
+    footer{
+        display: none;
+    }
+    .sobre-a-loja > article > img{
+        width: 740px;
+        height: 620px;
+        
+       
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    .botao-menu{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
