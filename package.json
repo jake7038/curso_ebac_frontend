@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "gulp-imagemin": "^9.1.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
@@ -16,7 +17,6 @@
     "chokidar": "^3.6.0",
     "fill-range": "^7.1.1",
     "glob-parent": "^5.1.2",
-    "gulp": "^5.0.0",
     "immutable": "^4.3.7",
     "is-binary-path": "^2.1.0",
     "is-extglob": "^2.1.1",

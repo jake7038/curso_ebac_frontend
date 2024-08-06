@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass')(require('sass'));
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
-var imagemin = require('gulp-imagemiin');
+const imagemin = require('gulp-imagemin');
 
 function compilaSass(){
     return gulp.src('./source/styles/main.scss')
@@ -16,9 +16,9 @@ function compilaSass(){
 
 
 function comprimirImagem(){
-    return gulp.src('./source/imagens/*')
+    return gulp.src('./source/images/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./build/img'))
+    .pipe(gulp.dest('./build/img'));
 }
 
 
