@@ -1,0 +1,15 @@
+{
+  "name": "exercicio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "less": "lessc ./source/styles/main.less ./build/styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "less": "^4.2.0"
+  }
+}

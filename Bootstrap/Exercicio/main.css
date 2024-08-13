@@ -1,0 +1,19 @@
+time{
+    display: block;
+}
+.post{
+    margin-bottom: 24px;
+}
+
+.formulario{
+    position: absolute;
+
+top: 50%;
+
+left: 50%;
+
+transform: translate(-50%, -50%); 
+
+border: black solid 2px;
+padding: 10px;
+}

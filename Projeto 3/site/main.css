@@ -1,0 +1,90 @@
+body{
+    font-family: fantasy;
+}
+
+.navbar {
+    background-color: coral;
+}
+
+.pacifico{
+    font-family:"Pacifico", Geneva, Tahoma, sans-serif;
+}
+
+#cabecalho .nav .nav-link.active{
+    background-color: azure;
+    color: coral;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-comidas .nav-link.active:hover{
+    color: #fff;
+}
+
+.navbar-brand{
+    font-family:"Pacifico", Geneva, Tahoma, sans-serif;
+    
+}
+
+.navbar-toggler{
+    background-color: #fff;
+}
+
+.section-title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section-title span, .text-colored{
+    color: coral;
+}
+
+#sobre-mim, #cardapio{
+    background-color:#ffeae6 ;
+}
+
+
+
+
+.nav-comidas .nav-link.active{
+    background-color: coral;
+    color: #fff;
+}
+
+.nav-comidas .nav-link:hover{
+    color: coral;
+}
+
+.social-links li{
+    list-style: none;
+    display: inline;
+}
+
+.social-links a{
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+.carousel-item img{
+    height: 280px;
+}
+header button span{
+    font-size: 16px;
+    
+}
+
+header ul{
+    margin-top: 10px;
+}
+#cardapio button{
+        margin-bottom: 16px;
+}
+
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+

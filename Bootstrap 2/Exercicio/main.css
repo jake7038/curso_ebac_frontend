@@ -1,0 +1,47 @@
+body{
+    background-color:rgba(169, 169, 169, 0.353);
+   
+}
+
+
+.post{
+    margin-bottom: 24px;
+}
+
+.img-carrosel{
+    background-color: rgba(0,0,0,0.8);
+    height: 480px;
+    width: 520px;
+}
+.carousel-p{
+    font-size:larger;
+}
+
+.texto-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    .img-carrosel{
+       display: none;
+      
+    }
+
+    #carrosel{
+        display: none;
+    }
+
+    .texto-desktop{
+        display: none;
+    }
+
+    .texto-mobile{
+        display: block;
+    }
+
+    h3{
+        display: block;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', serif;
+}
+
+body{
+    background-color:beige;
+    padding-top: 100px ;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+body img{
+    height: 36px;
+}
+header img{
+    height:52px;
+    margin-right: 16px;
+}
+
+header h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+form input{
+    font-size: 20px;
+    background-color: azure;
+    border: none;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+form button{
+ 
+    background-color: lightgreen;
+    color:black;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: black;
+    cursor: pointer;
+    padding: 8px;   
+    text-align:center;
+  
+}
+
+
+
+table{
+    width: 100%;
+}
+
+table th{
+    border-bottom: 2px solid black;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+table td{
+text-align: center;
+font-size: 18px;
+padding: 16px 0;
+border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+table td img{
+    height: 30px;
+}
+
+.resultado{
+    padding: 8px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.aprovado{
+    background-color: forestgreen;
+}
+
+.reprovado{
+    background-color: red;
+    border-radius: 3px;
+    padding: 8px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+footer{
+    background-color:rgba(100, 148, 237, 0.446);
+    margin-top:27%;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.nunito-palavra {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
