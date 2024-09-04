@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"mappings":"AAAA","sources":["src/styles/main.scss"],"sourcesContent":["body{\r\n    background-color: green;\r\n}"],"names":[],"version":3,"file":"main.css.map","sourceRoot":"/__parcel_source_root/"}
+=======
+{"mappings":"AAAA","sources":["src/styles/main.scss"],"sourcesContent":["body{\r\n    background-color: red;\r\n}"],"names":[],"version":3,"file":"main.css.map","sourceRoot":"/__parcel_source_root/"}
+>>>>>>> c5e3642620ba659239cf8c17da1eac4c1a517eba
