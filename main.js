@@ -19,5 +19,7 @@ document.addEventListener('DOMContentLoaded',function(){
         followers.innerText = json.followers;
         repos.innerText = json.public_repos;
         link.href = json.html_url;
+    }).catch(function(){
+        alert('ocorreu um erro ao carregar as informações. Por favor tente mais tarde')
     })
 })
