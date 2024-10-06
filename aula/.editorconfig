@@ -1,0 +1,8 @@
+root = true #arquivo mais importante para o editorconfig
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8 #tipo de codificação
+trim_trailing_whitespace = true #espaço entre simbolos
+insert_final_newline = true
