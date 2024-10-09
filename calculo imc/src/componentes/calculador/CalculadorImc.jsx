@@ -1,28 +1,36 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import styles from "../../assets/Calculadora.module.css";
 
 const Imc = () => { 
-    let [altura, setAltura] = useState(0);
-    let [peso, setPeso] = useState(0);
+    let [altura, setAltura] = useState('');
+    let [peso, setPeso] = useState('');
     let [res, setRes] = useState(0)
     let [texto, setTexto] = useState('')
     
     const mudaAltura = (event) => {
-        setAltura(event.target.value);
+        let valor = event.target.value.replace(',', '.'); //substitui a virgula por ponto
+        if (valor.length <= 4 && /^[0-9.]*$/.test(valor)) { // Se o valor tiver 3 caracteres e não tiver ponto, formata para "X.XX"
+            if (valor.length === 3 && !valor.includes('.')) {
+                valor = valor[0] + '.' + valor.substring(1);  
+            }
+            setAltura(valor);
+        }
     };
 
     const mudaPeso = (event) => {
         setPeso(event.target.value);
     };
+
     const mudaRes = () => {
-        setRes(peso/(altura*altura));
-        imcTipo()
-        
+        setRes(peso/altura*altura);
+        imcTipo();
     };
 
 
-    const imcTipo = () => {
-        
+
+
+    const imcTipo = () => { //função que retorna a classificação na tabela IMC
+
         if(res > 40){
             setTexto("Obesidade Grau III");
         }
@@ -47,17 +55,44 @@ const Imc = () => {
 
 
     return(
-        <div className="container ">
-            <input type="number" value={peso} onChange={mudaPeso} />
-            <input type="number" value={altura} onChange={mudaAltura} />
-            <button  onClick={mudaRes}>Calcular IMC</button>
-            <div>
-            {res}
+        <div className={styles.container}>  {/* Container principal com estilos */} 
+        <div className={styles.inputGroup}>  {/* Grupo de inputs para peso e altura */}
+            <div className={styles.inputWrapper}>  {/* Wrapper para o campo de peso */}
+                <label htmlFor="peso">Peso (kg)</label>  {/* Rótulo do campo de peso */}
+                <input 
+                    id="peso" 
+                    type="number"  // Campo para número
+                    value={peso}  // Valor atual do peso
+                    onChange={mudaPeso}  // Chama a função ao mudar o valor
+                    min="0"  // O peso não pode ser negativo
+                    placeholder="80.0"  // Texto de ajuda no campo
+                    step="0.01"  // altera em 0.01 ao clicar no botão do input
+                />
             </div>
-            <div>
-                {texto}
+
+            <div className={styles.inputWrapper}>  {/* Wrapper para o campo de altura */}
+                <label htmlFor="altura">Altura (em metros)</label>  {/* Rótulo do campo de altura */}
+                <input 
+                    id="altura" 
+                    type="number"  // Campo para número
+                    value={altura}  // Valor atual da altura
+                    onChange={mudaAltura}  // Chama a função ao mudar o valor
+                    placeholder="1.80"  // Texto de ajuda no campo
+                    step="0.01"  // altera em 0.01 ao clicar no botão do input
+                />
             </div>
         </div>
+        
+        <button onClick={mudaRes}>Calcular IMC</button>  {/* Botão para calcular o IMC */}
+
+        {/* Exibe o resultado e a classificação apenas após o cálculo */}
+        {res > 0 && (  // Verifica se o resultado é maior que zero
+            <div className={styles.resultado}>  {/* Container para exibir o resultado */}
+                <p>Resultado: {res.toFixed(2)}</p>  {/* Exibe o resultado formatado com duas casas decimais */}
+                <p>Classificação: {texto}</p>  {/* Exibe a classificação do IMC */}
+            </div>
+        )}
+    </div>
     )
     
     
@@ -65,4 +100,4 @@ const Imc = () => {
 
 }
 
-export default Imc
+export default Imc;
