@@ -1,12 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-
-import Test from './teste'
-
+import Sidebar from './containers/sidebar'
+import Sobre from './containers/Sobre';
+import Projetos from './containers/Projetos';
+import EstiloGlobal, { Container } from './styles'
 function App() {
   return (
-    <Test />
-  );
+    <>
+    <EstiloGlobal/>
+    <Container>
+    <Sidebar/>
+    <main>
+      <Sobre/>
+      <Projetos/>
+    </main>
+    </Container>
+    </>
+
+  )
 }
 
 export default App;
