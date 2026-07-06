@@ -1,0 +1,162 @@
+@use 'variaveis';
+@use 'hero';
+@use 'sumario';
+@use 'elenco';
+@use 'streaming';
+@use 'faq';
+@use 'footer';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    
+}
+
+body{
+
+    background-image: url("../images/background-agua.jpg");
+    background-size: cover;
+    
+}
+
+@mixin text($fontSize: 1.5vw){
+    font-size: $fontSize;
+    line-height: $fontSize + 1vw;
+    color: #161616;
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(1.5vw);
+}
+
+.text--white {
+    @include text;
+    color: #fff
+}
+
+.text--white-small {
+    @include text(1.5vw);
+    color: #fff
+}
+
+.text--white-faq{
+    @include text(1.1vw);
+    color: #fff
+}
+
+.title{
+    @include text(4vw);
+    color: black;
+    
+}
+
+.title--normal{
+    @include text(3vw);
+    color: black;
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    @mixin text($fontSize: 2vw){
+        font-size: $fontSize;
+        line-height: $fontSize + 1vw;
+        color: #161616;
+    }
+
+    .text {
+        @include text;
+    }
+    
+    .text--small {
+        @include text(1.8vw);
+    }
+    
+    .text--white {
+        @include text;
+        color: #fff
+    }
+    
+    .text--white-small {
+        @include text(2vw);
+        color: #fff
+    }
+    
+    
+    .title{
+        @include text(4.5vw);
+        color: black;
+        
+    }
+    
+    .title--normal{
+        @include text(4vw);
+        color: black;
+        
+    }
+
+    
+    .text--white-faq{
+        @include text(2vw);
+        color: #fff
+    }
+}
+
+@media screen and (max-width: 768px){
+    @mixin text($fontSize: 3vw){
+        font-size: $fontSize;
+        line-height: $fontSize + 2vw;
+        color: #161616;
+    }
+
+    .text {
+        @include text;
+    }
+    
+    .text--small {
+        @include text(4vw);
+    }
+    
+    .text--white {
+        @include text;
+        color: #fff
+    }
+    
+    .text--white-small {
+        @include text(4vw);
+        color: #fff
+    }
+    
+    
+    .title{
+        @include text(6vw);
+        color: black;
+        
+    }
+    
+    .title--normal{
+        @include text(7vw);
+        color: black;
+        
+    }
+
+    
+    .text--white-faq{
+        @include text(3vw);
+        color: #fff
+    }
+}
+
+.bungee-shade-regular {
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #161616;
+}
+

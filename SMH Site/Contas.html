@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .profiles {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .profile {
+            text-align: center;
+            cursor: pointer;
+            
+        }
+        .profile img {
+           
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+        .profile-name {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+    </style>
+
+<audio  autoplay>
+    <source src="./audio/audio de entrada.wav" type="audio/wav">
+    </audio>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Quem está assistindo?</h1>
+        <div class="profiles">
+            <div class="profile" onclick="selectProfile('Marcos')">
+                <img src="./img/perfil/marcola.jpeg" alt="Marcos">
+                <div class="profile-name">Marcos</div>
+            </div>
+            <div class="profile" onclick="selectProfile('Isaque')">
+                <img src="./img/perfil/isaque.jpg" alt="Isaque">
+                <div class="profile-name">Isaque</div>
+            </div>
+            <div class="profile" onclick="selectProfile('Arthur')">
+                <img src="./img/perfil/tucola.jpg" alt="Arthur">
+                <div class="profile-name">Arthur</div>
+            </div>
+
+            
+
+    
+        </div>
+    </div>
+    <script>
+        function selectProfile(profileName) {
+            alert('Perfil selecionado: ' + profileName);
+            window.location.href = '/Menu-inicial.html';
+            
+        }
+    </script>
+</body>
+</html>

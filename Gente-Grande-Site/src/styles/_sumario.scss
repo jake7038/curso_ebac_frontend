@@ -1,0 +1,25 @@
+.sumario{
+    padding: 5.6vw;
+    min-height: 5.3vw;
+    background-color: #fff;
+
+    &__text{
+        padding-top: 4vw;
+        display: flex;
+        text-align: justify;
+        list-style: none;
+        position: relative;
+        
+        &__item:last-child{
+                padding-left: 4vw;
+            }
+        
+    }
+}
+
+@media screen and (max-width: 768px){
+.sumario__text{
+    gap: 8px;
+}
+
+}

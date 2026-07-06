@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/main.scss">
+    <script src="./scripts/main.js"></script>
+    <title>Sitio Toledos | Feriadão</title>
+</head>
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./images/sitio-logo.png" alt="">
+            <p class="hero__text">
+                Falta <span id="contador"></span> Para o feriadão no Sítio Toledos
+            </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Estrada da Barreira 2110, Guapimirim
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>preço</b>
+                        A partir de R$ 320 
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Dias</b>
+                        18,19 e 20 de novembro 
+                    </li>
+                </ul>
+                <a href="https://api.whatsapp.com/send?+1=pt_BR&phone=5521964124605&text=Fala+careca!+me+coloca+nessa+sacanagem+que+vai+ter+nesse+sítio" class="button button--primary"> Garanta sua presença</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="event event--section1">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">O Sítio</h2>
+                <p class="event__details__description">
+                    Cercado pelo verde da Serra dos Órgãos em Guapimirim e às margens do Rio Soberbo, com suas belíssimas cachoeiras, o Sítio Toledos oferece sua infraestrutura de lazer e acomodações para realização de retiros, confraternizações, eventos corporativos ou mesmo um delicioso final de semana com sua família.
+                </p>
+            </div>
+            <img src="./images/casa.png" alt="">
+        </div>
+    </section>
+
+    <section class="event event--section2 event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Piscina e Cachoreira</h2>
+                <p class="event__details__description">
+                    Piscina larga com sol a vontade. Caso queira algo natural basta ir para a cachoeira ao lado
+                </p>
+            </div>
+            <img src="./images/psicina.png" alt="">
+        </div>
+    </section>
+
+    <section class="event event--section3">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">O Salão</h2>
+                <p class="event__details__description">
+                Campeonato de Toto, Ping-Pong e Sinuca garantido. O Vencedor nem precisa pagar a diaria do dia, só não vale roletar.
+                </p>
+            </div>
+            <img src="./images/toto.png" alt="">
+        </div>
+    </section>
+
+    <section class="event event--section4 event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Churrasco</h2>
+                <p class="event__details__description">
+                    Churrasco toda noite com garantia do excelentíssimo chefe Tucas.
+                </p>
+            </div>
+            <img src="./images/churras.png" alt="">
+        </div>
+    </section>
+    
+    <script src="./scripts/contador.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<body>
+    
+</body>
+</html>

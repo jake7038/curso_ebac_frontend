@@ -1,0 +1,2 @@
+const e=new Date("November 17, 2024 03:24:00").getTime(),t=setInterval(function(){let n=e-new Date().getTime(),o=Math.floor(n/864e5),a=Math.floor(n%864e5/36e5),r=Math.floor(n%36e5/6e4),l=Math.floor(n%6e4/1e3);document.getElementById("contador").innerHTML=`${o}D ${a}H ${r}M ${l}S`,n<0&&(clearInterval(t),document.getElementById("contador").innerHTML="Nada")},1e3);
+//# sourceMappingURL=index.e5d62264.js.map

@@ -1,0 +1,121 @@
+:root{
+    --vermelho:#E50914;
+    --preta: #141414;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base*/
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+header .container{
+ display:flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px ;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+ 
+    color: #fff;
+
+}
+
+/* filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,00,0,.50)), url('../img/gente.jpg');
+
+
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .sinopse{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ .botao{
+	border-radius: 15px;
+    border: none;
+	background-color: rgba(0,0,0,.50);
+	color: #e5e8e8;
+	transition: all 0.3s linear;
+    padding: 15px 15px;
+
+    cursor: pointer;
+}
+.botao:hover {
+	background-color: rgba(247, 247, 247,0.70);
+    color:black;
+}
+
+.botao i{
+    margin: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 75%;
+}
+
+.box-filmes{
+    height: 400px;
+    width: 450px;
+    display: block;
+
+    
+}
+
+.carrosel{
+    margin-top: 5px;
+}
+
+
+footer{
+    padding: 10px;
+}
+footer .botoes{
+    margin: 15px;
+}
+

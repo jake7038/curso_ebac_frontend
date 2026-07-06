@@ -1,0 +1,15 @@
+@use 'variaveis';
+
+footer{
+    padding-top: 24px;
+    background-color: variaveis.$preto;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        font-size: 14px;
+    }
+}

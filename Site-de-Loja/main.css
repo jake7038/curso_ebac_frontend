@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 16px 0;
+    background-color: rgba(0, 0, 255, 0.769);
+    color: aliceblue;
+    font-family: "Rowdies", sans-serif;
+    font-weight: normal;
+}
+section h3,form button{
+    font-family: "Rowdies", sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+
+}
+
+header nav li a{
+    color: azure;
+    text-decoration: none;
+    
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img{
+   height: 26px;
+   
+}
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+}
+section .container{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+    color: rgba(0, 0, 255, 0.769) ;
+}
+
+section p{
+    margin-bottom: 8px;
+}
+
+section img{
+
+    margin-right: 32px;
+}
+
+.brands-list img{
+    margin-right: 0px;
+}
+
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dm-serif-text-regular-italic {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.rowdies-light {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rowdies-regular {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rowdies-bold {
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+body{
+    font-family: "DM Serif Text", serif;
+    font-weight: normal;
+}
+
+.social-links img{
+    max-height: 24px;
+}
+
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+
+}
+.social-links li a {
+    text-decoration: none;
+}
+#contact .container{
+    display: block;
+}
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none;
+    height: 150px;
+}
+
+form button{
+    background-color:rgba(0, 0, 255, 0.769) ;
+    color: azure;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgba(0, 0, 255, 0.678);
+    
+}
+
+input:focus, textarea:focus{
+    outline-color: blueviolet;
+}
+
+footer{
+    background-color:rgba(0, 0, 255, 0.769) ;
+    color:azure;
+    padding: 16px 0;
+    
+}
+footer p{
+    text-align: center;
+}

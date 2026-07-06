@@ -1,0 +1,2 @@
+const e=new Date("Dec 12, 2024 19:00:00").getTime(),t=setInterval(function(){let o=e-new Date().getTime(),n=Math.floor(o/864e5),a=Math.floor(o%864e5/36e5),r=Math.floor(o%36e5/6e4),l=Math.floor(o%6e4/1e3);document.getElementById("contador").innerHTML=`${n}D ${a}H ${r}M ${l}S`,o<0&&(clearInterval(t),document.getElementById("contador").innerHTML=`O evento j\xe1 come\xe7ou`)},1e3);
+//# sourceMappingURL=index.fd3fdc3d.js.map
